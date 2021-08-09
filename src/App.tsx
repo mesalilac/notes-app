@@ -1,5 +1,6 @@
 import NotesList from "./components/NotesList/NotesList";
 import Search from "./components/search/Search";
+import Header from "./components/Header/Header"
 import "./app.css";
 import { useState } from "react";
 import { nanoid } from "nanoid" 
@@ -56,6 +57,7 @@ export default function App() {
 
   return (
     <div className="container">
+      <Header />
       <Search 
         handleSearchNote={setSearchText}
       />
