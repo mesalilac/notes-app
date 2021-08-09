@@ -2,7 +2,7 @@ import NotesList from "./components/NotesList/NotesList";
 import Search from "./components/search/Search";
 import Header from "./components/Header/Header"
 import "./app.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { nanoid } from "nanoid" 
 
 /*
@@ -37,6 +37,19 @@ export default function App() {
     }
   ]);
   const [searchText, setSearchText] = useState('')
+
+  useEffect(() => {
+    const localStorageData = localStorage.getItem("notes-data")
+    const savedNotes = JSON.parse(localStorageData)
+
+    if (savedNotes) {
+      setNotes(savedNotes)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("notes-data", JSON.stringify(notes))
+  }, [notes])
 
   function addNote(text: string) {
     const date = new Date()
