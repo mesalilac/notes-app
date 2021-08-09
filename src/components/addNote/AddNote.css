@@ -1,0 +1,18 @@
+.add-new-note {
+  background-color: rgb(59, 226, 134);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  background: none;
+}
+
+.save-button {
+  background-color: rgb(102, 104, 104);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
