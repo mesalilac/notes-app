@@ -1,10 +1,9 @@
-import React from "react";
-import "./App.css";
+import NotesList from "./components/NotesList/NotesList";
 
 export default function App() {
   return (
-    <>
-      <p>hi</p>
-    </>
+    <div className="container">
+      <NotesList />
+    </div>
   );
 }
