@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-button {
+  background-color: rgb(102, 104, 104);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: white;
+}
