@@ -11,6 +11,9 @@ import { nanoid } from "nanoid"
 
   TODO:
     search by note
+
+  TODO:
+    change styles
 */
 
 export default function App() {
