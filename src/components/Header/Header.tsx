@@ -5,7 +5,7 @@ export default function Header({notes, handleAddNote, handleDeleteNote}: any) {
     <>
       <div className="header">
         <h1>Notes</h1>
-        <button className="toggle-button">toggle mode</button>
+        {/* <button className="toggle-button">toggle mode</button> */}
       </div>
     </>
   );
