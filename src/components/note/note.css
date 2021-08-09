@@ -8,3 +8,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
