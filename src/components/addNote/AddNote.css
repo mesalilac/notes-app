@@ -1,5 +1,5 @@
 .add-new-note {
-  background-color: rgb(59, 226, 134);
+  background-color: #6f6fc8;
 }
 
 textarea {
@@ -7,6 +7,10 @@ textarea {
   resize: none;
   outline: none;
   background: none;
+}
+
+textarea::placeholder {
+  color: white;
 }
 
 .save-button {
