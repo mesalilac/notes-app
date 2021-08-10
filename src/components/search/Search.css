@@ -1,14 +1,20 @@
 .search {
   display: flex;
   align-items: center;
-  background-color: rgb(216, 216, 216);
+  background-color: #2d2a3f;
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 1.5em;
 }
 
+
+
 .search input {
   border: none;
   background: none;
   outline: none;
+}
+
+.search input::placeholder {
+  color: white;
 }
